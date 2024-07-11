@@ -1,0 +1,3 @@
+1. запускаем сервак локально
+2. запускаем контейнер с rabbitmq
+3. пример запуска задачи на celery под windows: celery -A DjangoCeleryExample worker -l info -Q queue1 -E --pool=solo
