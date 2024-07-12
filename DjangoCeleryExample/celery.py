@@ -12,12 +12,8 @@ app.autodiscover_tasks()
 
 @app.on_after_configure.connect
 def setup_periodic_tasks(sender, **kwargs) -> None:
-    # Example of periodic task (will be executed every 30 seconds)
     sender.add_periodic_task(3, periodic_task.s(), name="Periodic task example")
 
-
-@app.task(name="PeriodicTask (every 30 seconds)")
+@app.task(name="PeriodicTask (every 3 seconds)")
 def periodic_task() -> None:
-    with open("f.txt", "w"):
-        pass
     print("Example of periodic task executed!")
