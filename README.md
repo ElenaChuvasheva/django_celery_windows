@@ -1,3 +1,5 @@
+На основе вот этого https://github.com/AntonAks/Django-Celery-Rabbit/tree/main
+
 Запуск:
 1. сервак локально: python manage.py runserver, открываем главную в браузере
 2. контейнер с rabbitmq: docker compose up
